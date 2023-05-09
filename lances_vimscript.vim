@@ -1,4 +1,15 @@
 " BEGIN VIMSCRIPT CONFIG 
+
+
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-l': 'vsplit' }
+
+" Default fzf layout
+" - down / up / left / right
+let g:fzf_layout = { 'down': '~40%' }
+
 "  Original Ag command bound to  AgJS aka ag jump search
 if executable('ag') 
     " Note we extract the column as well as the file and line number
@@ -7,6 +18,8 @@ if executable('ag')
 endif
 
 command -nargs=+ -complete=file -bar AgJS silent! grep! <args>|cwindow|redraw!
+
+
 
 tnoremap <C-h> <C-\><C-N><C-w>h
 tnoremap <C-j> <C-\><C-N><C-w>j
