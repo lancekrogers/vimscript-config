@@ -6,7 +6,8 @@ if executable('ag')
     set grepformat=%f:%l:%c%m
 endif
 
-command -nargs=+ -complete=file -bar AgJS silent! grep! <args>|cwindow|redraw!
+command -nargs=+ -complete=file -bar AgTEST silent! grep! <args>|cwindow|redraw!
+
 tnoremap <C-h> <C-\><C-N><C-w>h
 tnoremap <C-j> <C-\><C-N><C-w>j
 tnoremap <C-k> <C-\><C-N><C-w>k
