@@ -47,4 +47,33 @@ nnoremap <c-p> <cmd>Telescope find_files<cr>
 " Toggle line number modes
 nnoremap <silent><F7> :exec &nu==&rnu? "se nu!" : "se rnu!"<CR> 
 
+
+au BufNewFile,BufRead *.py,*.vy
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set colorcolumn=80 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix |
+
+au BufNewFile,BufRead *.ts,*.js,*.html,*.css,*.jsx,*.sql,*.sol
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2 |
+    \ set textwidth=99 |
+    \ set colorcolumn=100 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix |
+
+au BufNewFile,BufRead *.sh,*.vimrc
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix |
+
 " END VIMSCRIPT CONFIG 
