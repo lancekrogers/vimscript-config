@@ -1,7 +1,7 @@
 " BEGIN VIMSCRIPT CONFIG 
 
 " If you want to start window resize mode by `Ctrl+T`
-let g:winresizer_start_key = '<C-T>'
+let g:winresizer_start_key = '<C-w>'
 
 " If you want to cancel and quit window resize mode by `z` (keycode 122)
 let g:winresizer_keycode_cancel = 122
